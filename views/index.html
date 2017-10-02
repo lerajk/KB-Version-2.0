@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">	
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">	
+
+</header>
+<body>
+
+<div class ="sectionOne">
+	<h2 style="color:white;">YOU'VE GOT QUESTIONS</h2>
+	<p style="color:white;">We've got answers! Well, some of them...</p>
+
+	<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Your quest for knowledge starts here...">
+      <button type="submit" class="questbutton"> LETS QUEST! </button>
+   </div>
+</div>
+
+</div> <!--sectionOne-->
+
+<div class ="sectionTwo" >
+	<button type="submit" class="navbutton"> ACCOUNTS </button>
+	<button type="submit" class="navbutton"> SOCIAL MEDIA </button>
+	<button type="submit" class="navbutton"> CONTENT </button>
+	<button type="submit" class="navbutton"> DESIGN - DEV </button>
+	
+</div> <br> <!--sectionTwo-->
+
+
+
+<div> <!--sectionThree-->
+
+<div class= "ask" >
+
+	<h3 style="color:#36485C; "> <b>ASK A QUESTION </b></h3> <br>
+	<p> If you can't find what you're looking for it may be worth</p> 
+	<p> adding to our knowledge base. Submit your question!</p> 
+    
+    <input type="text" class="searchTerm"  style="border-radius: 20px;">
+    <button type="submit" class="questbutton" style="border-radius: 20px;"> ASK > </button>  
+	
+</div>
+
+<div class = "recent">
+		<h5 style="color:#36485C; "> Recent Documents</h5> <br>
+	
+</div>
+	
+
+</div> <!--sectionThree-->
+
+
+
+
+
+<script type="text/javascript">
+	// go to add page
+    document.getElementById("add").onclick = function () {
+        window.location.href = 'https://kwldgebase.herokuapp.com/add';
+    };
+
+    //go to show page
+    document.getElementById("show").onclick = function () {
+        window.location.href = 'https://kwldgebase.herokuapp.com/show';
+    };
+</script>
+</body>
+</html>

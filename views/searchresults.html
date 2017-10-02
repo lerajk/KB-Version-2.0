@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">	
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</header>
+<body>
+	<div class = "container">
+		<div class="checkbox">
+  		<fieldset>
+    	<label for="checkbox-1">Content Management</label>
+    	<input type="checkbox" name="checkbox-1" id="checkbox-1">
+    	<label for="checkbox-2">Account Management</label>
+    	<input type="checkbox" name="checkbox-2" id="checkbox-2">
+    	<label for="checkbox-3">Social Management</label>
+    	<input type="checkbox" name="checkbox-3" id="checkbox-3">
+    	<label for="checkbox-4">Design N Development </label>
+    	<input type="checkbox" name="checkbox-4" id="checkbox-4">
+    	<label for="checkbox-5">Other</label>
+    	<input type="checkbox" name="checkbox-5" id="checkbox-5">
+  		</fieldset>
+		</div>
+
+		<div id="accordion">
+  			<h3>Question: What is a Blog ?</h3>
+  			<div>
+    		<p>Answer: I'm a blog.</p>
+  			</div>
+		</div>
+
+<!-- JavaScript -->
+	<script>
+  		$( function() {
+		$( "input" ).checkboxradio();} );
+
+		$( function() {
+   		$( "#accordion" ).accordion(); } );
+  	</script>
+</body>
+</html>
+
